@@ -1,0 +1,442 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body,p,ul,img,button {
+    padding:0;
+    margin:0;
+}
+
+h1 {
+    padding:0;
+    margin:0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.txt-blind {
+    position:absolute;
+    height: 1;
+    width: 1;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    background-color:#EAE8FE;
+}
+
+.logo {
+    display: block;
+    margin:0 auto;
+}
+
+.list-select {
+    margin-bottom: 20px;
+}
+.page1,.page2 {
+    display: inline-block;
+    width: 360px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #FFF;
+    padding: 31px 0 28px 0;
+}
+
+.page2 {
+    padding:9px 27px;
+}
+.type {
+    display: inline-block;
+    width: 94px;
+    -webkit-box-shadow: 0px 0px 4px 0px #00000080;
+    box-shadow: 0px 0px 4px 0px #00000080;
+    border-radius: 10px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.type:not(:last-child) {
+    margin: 0px 12px 12px 0px;
+}
+
+.type.original {
+    background-image: url(images/콜라.png);
+    background-repeat: no-repeat;
+    background-position: top 11px center;
+}
+
+.type.violet {
+    background-image: url(images/보라콜라.png);
+    background-repeat: no-repeat;
+    background-position: top 11px center;
+}
+
+.type.yellow {
+    background-image: url(images/노란콜라.png);
+    background-repeat: no-repeat;
+    background-position: top 11px center;
+}
+
+.type.cool {
+    background-image: url(images/파란콜라.png);
+    background-repeat: no-repeat;
+    background-position: top 11px center;
+}
+
+.type.green {
+    background-image: url(images/초록콜라.png);
+    background-repeat: no-repeat;
+    background-position: top 11px center;
+}
+
+.type.orange {
+    background-image: url(images/오렌지콜라.png);
+    background-repeat: no-repeat;
+    background-position: top 11px center;
+}
+
+
+
+.type .beverage_type {
+    margin-top: 82px;
+    font-family: Noto Sans KR;
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0em;
+    margin-bottom: 7px;
+}
+
+.type .beverage_money {
+    
+    display: block;
+    width: 70px;
+    font-family: Noto Sans KR;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0em;
+    background-color: #6327FE;
+    border-radius: 50px;
+    padding: 4px 0px;
+    color:#FFF;
+    margin:0 auto 9px;
+}
+
+.btn-returnbalance {
+    margin-bottom: 11px;
+}
+.btn-returnbalance .box-money {
+    background-color: #EAE8FE;
+    width: 200px;
+    padding:6px 10px 7px;
+    border-radius: 5px; 
+    margin-left: 25px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float:left;
+}
+
+.btn-returnbalance::after, .box-money::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.btn-returnbalance .box-money p:nth-child(1){
+    float:left;
+}
+
+.btn-returnbalance .box-money p:nth-child(2){
+    float: right;
+}
+
+.btn-returnbalance .btn-return {
+    float:right;
+    width: 94px;
+    font-family: Noto Sans KR;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    background-color: #FFF;
+    -webkit-box-shadow: 0px 0px 4px 0px #00000080;
+    box-shadow: 0px 0px 4px 0px #00000080;
+    border-radius: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding:6px 0 6px;
+    margin-right: 27px;
+}
+.btn-depositmoney {
+    margin-bottom: 11px;
+}
+.btn-depositmoney::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.btn-depositmoney .deposit {
+    float:left;
+    margin-left:27px;
+    width: 200px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    padding:6px 0px 8px 6px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.btn-depositmoney .btn-deposit {
+    float:right;
+    width: 94px;
+    font-family: Noto Sans KR;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    background-color: #FFF;
+    -webkit-box-shadow: 0px 0px 4px 0px #00000080;
+    box-shadow: 0px 0px 4px 0px #00000080;
+    border-radius: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding:6px 0 6px;
+    margin-right: 27px;
+}
+.list-purchase::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.list-purchasetype {
+    float:left;
+    width: 200px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #EAE8FE;
+    margin-left:27px;
+    padding:11px 17px 0 11px;
+}
+
+.list-purchasetype .choose {
+    overflow: hidden;
+    width:170px;
+    padding:6px 8px 7px 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #FFF;
+    margin-bottom: 6px;
+    border-radius: 5px;
+}
+.choose::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.choose.original {
+    background-image: url(images/콜라선택리스트.png);
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+}
+.choose.green {
+    background-image: url(images/초록콜라선택리스트.png);
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+}  
+.selectbeverage p:nth-child(1) {
+    float: left;
+    font-family: Noto Sans KR;
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0em;
+    margin-left:38px;
+    line-height: 30px;
+    /* 이거 어떻게 맞추지? */
+}
+
+.selectbeverage p:nth-child(2) 
+{   
+    float: right;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Noto Sans KR;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    width: 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding:4px 0 6px;
+}
+
+.btn-get {
+    width: 94px;
+    color:white;
+    text-align: center;
+    padding:48px 0 44px 0;
+    background-color: #6327FE;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 4px 0px #00000080;
+     box-shadow: 0px 0px 4px 0px #00000080;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: 15px;
+    font-family: Noto Sans KR;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+}
+
+.box-funds {
+    width: 306px;
+    background-color: #EAE8FE;
+    border-radius: 5px;
+    padding:6px 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;   
+}
+
+.box-funds::after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+.box-funds p:nth-child(1) {
+    float:left;
+    font-family: Noto Sans KR;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+}
+
+.box-funds p:nth-child(2) {
+    float:right;
+    font-family: Noto Sans KR;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+}
+
+.get-listofbeverage {
+    width:306px;
+    height: 364px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    background-color: #EAE8FE;
+    padding:12px 18px 0 12px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.get-beverage h1{
+    margin-top: 41px;
+    margin-bottom: 13px;
+    font-family: Noto Sans KR;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+}
+
+
+.get::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.get-beverage-number .get {
+    width: 276px;
+    background-color: #FFF;
+    border-radius:5px;
+    margin-bottom: 6px;
+    padding:6px 6px 7px 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.get-beverage-number .get p:nth-child(1) {
+    float: left;
+    font-family: Noto Sans KR;
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0em;
+    margin-left: 38px;
+    line-height: 30px;
+}
+
+.get-beverage-number .get p:nth-child(2) {
+    float: right;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Noto Sans KR;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    width: 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding:4px 0 6px;
+    margin-right: 8px;
+}
+
+.get.original {
+    background-image: url(images/획득콜라.png);
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+}
+.get.green {
+    background-image: url(images/획득초록콜라.png);
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+} 
+
+.get.orange {
+    background-image: url(images/획득오렌지콜라.png);
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+}
+.get.violet {
+    background-image: url(images/획득보라콜라.png);
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+} 
+
+.total p {
+    float:right;
+    font-family: Noto Sans KR;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    margin:6px 0 43px;
+}
+
+.totalpage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 18px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
