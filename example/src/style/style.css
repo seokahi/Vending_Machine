@@ -63,7 +63,7 @@ body {
             box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
 }
 
-.vending-machine .list-item li:active::before {
+.vending-machine .list-item li:active::after{
    /* 선택됐을때 전에다가  */
    /* 눌렀을 때 보라색 보더 나오게 하려구 */
    /* 아웃라인으로 해도 상관없음 */
