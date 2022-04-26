@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>벤딩머신구현</title>
+    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="src/style/reset.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="ir">ColaCola로고</h1>
+        <img src="src/style/images/Logo_img.png" alt="" class="logo">
+    </header>
+    <main class="main">
+        <section class="vendingMachine-info">
+            <h2 class="ir">자판기화면</h2>
+            <ul class="list-item">
+                <li id="list-item-one">
+                    <button>
+                        <img src="src/style/images/Original_Cola.png" alt="" class="img-beverage" onclick="Original_Cola()">
+                        <span class="txt-item">Original_Cola</span>
+                        <span class="txt-price">1000원</span>
+                    </button>                    
+                </li>
+                <li>
+                    <button class="sold-out">
+                        <img src="src/style/images/Violet_Cola.png" alt="" class="img-beverage" onclick="Violet_Cola()">
+                        <span class="txt-item">Violet_Cola</span>
+                        <span class="txt-price">1000원</span>
+                    </button>                    
+                </li>
+                <li>
+                    <button>
+                        <img src="src/style/images/Yellow_Cola.png" alt="" class="img-beverage" onclick="Yellow_Cola()">
+                        <span class="txt-item">Yellow_Cola</span>
+                        <span class="txt-price">1000원</span>
+                    </button>                    
+                </li>
+                <li>
+                    <button>
+                        <img src="src/style/images/Cool_Cola.png" alt="" class="img-beverage" onclick="Cool_Cola()">
+                        <span class="txt-item">Cool_Cola</span>
+                        <span class="txt-price">1000원</span>
+                    </button>                    
+                </li>
+                <li>
+                    <button>
+                        <img src="src/style/images/Green_Cola.png" alt="" class="img-beverage" onclick="Green_Cola()">
+                        <span class="txt-item">Green_Cola</span>
+                        <span class="txt-price">1000원</span>
+                    </button>                    
+                </li>
+                <li>
+                    <button>
+                        <img src="src/style/images/Orange_Cola.png" alt="" class="img-beverage" onclick="Orange_Cola()">
+                        <span class="txt-item">Orange_Cola</span>
+                        <span class="txt-price">1000원</span>
+                    </button>                    
+                </li>
+            </ul>
+            <section class="balance-info">
+                <div class="select-info">
+                    <span class="txt-balance">잔액 : </span>
+                <span class="txt-money">1,000원</span>
+                </div>
+                <button class="btn-put">거스름돈 반환</button>
+                <input type="text" class="int-put" placeholder="입금액 입력">
+                <button class="btn-put">입금</button>
+                <ul class="list-select">
+                </ul>
+                <button class="btn-get">획득</button>
+            </section>
+        </section>
+        <section class="total-info">
+            <div class="cont-total">
+                <div class="total-buy">
+                    <span class="txt-funds">소지금 :</span>
+                    <span class="txt-totalfunds">25,.000원</span>
+                </div>
+            </div>
+            <div class="cont-get">
+                <h2 class="tit-total">획득한 음료</h2>
+                <ul class="list-select">
+                </ul>
+                <strong class="txt-total">총금액 : 9.000원</strong>
+            </div>
+
+        </section>
+    </main>
+    <script>
+        let Original_Cola_stats=0;
+        let Violet_Cola_stats=0;
+        let Yellow_Cola_stats=0;
+        let Cool_Cola_stats=0;
+        let Green_Cola_stats=0;
+        let Orange_Cola_stats=0;
+        function Original_Cola(){
+            if(Original_Cola_stats == 0){
+                $(".list-select").append('<li><img src="src/style/images/Original_Cola.png" alt="" class="img-type"><span class="txt-beverage">Original_Cola</span><span class="txt-number-one">1</span> </li>');
+                Original_Cola_stats += 1;
+            }
+            else {
+                $(".txt-number-one").text(Original_Cola_stats);
+                Original_Cola_stats +=1;
+            }
+        }
+        function Violet_Cola() {
+            if(Violet_Cola_stats == 0){
+                $(".list-select").append('<li><img src="src/style/images/Violet_Cola.png" alt="" class="img-type"><span class="txt-beverage">Violet_Cola</span><span class="txt-number-two">1</span> </li>');
+                Violet_Cola_stats +=1;
+            }
+            else {
+
+                $(".txt-number-two").text(Violet_Cola_stats);
+                Violet_Cola_stats +=1;
+            }
+        }
+        function Yellow_Cola() {
+            if(Yellow_Cola_stats == 0){
+                $(".list-select").append('<li><img src="src/style/images/Yellow_Cola.png" alt="" class="img-type"><span class="txt-beverage">Yellow_Cola</span><span class="txt-number-three">1</span> </li>');
+                Yellow_Cola_stats +=1;
+            }
+            else {
+                $(".txt-number-three").text(Yellow_Cola_stats);
+                Yellow_Cola_stats +=1;
+            }
+        }
+        function Cool_Cola() {
+            if(Cool_Cola_stats == 0){
+                $(".list-select").append('<li><img src="src/style/images/Cool_Cola.png" alt="" class="img-type"><span class="txt-beverage">Cool_Cola</span><span class="txt-number-four">1</span> </li>');
+                Cool_Cola_stats +=1;
+            }
+            else {
+                $(".txt-number-four").text(Cool_Cola_stats);
+                Cool_Cola_stats +=1;
+            }
+        }
+        function Green_Cola() {
+            if(Green_Cola_stats == 0){
+                $(".list-select").append('<li><img src="src/style/images/Green_Cola.png" alt="" class="img-type"><span class="txt-beverage">Green_Cola</span><span class="txt-number-five">1</span> </li>');
+                Green_Cola_stats +=1;
+            }
+            else {
+                $(".txt-number-five").text(Green_Cola_stats);
+                Green_Cola_stats +=1;
+            }
+        }
+        function Orange_Cola() {
+            if(Orange_Cola_stats == 0){
+                $(".list-select").append('<li><img src="src/style/images/Orange_Cola.png" alt="" class="img-type"><span class="txt-beverage">Orange_Cola</span><span class="txt-number-six">1</span> </li>');
+                Orange_Cola_stats +=1;
+            }
+            else {
+                $(".txt-number-six").text(Orange_Cola_stats);
+                Orange_Cola_stats +=1;
+            }
+        }
+    </script>
+</body>
+</html>

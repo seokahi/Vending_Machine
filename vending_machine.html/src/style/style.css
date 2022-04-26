@@ -194,7 +194,7 @@ body {
     margin-left: 10px;
 }
 
-.vendingMachine-info .balance-info .list-select .txt-number {
+.vendingMachine-info .balance-info .list-select .txt-number-one,.txt-number-two,.txt-number-three,.txt-number-four,.txt-number-five,.txt-number-six {
     border: 1px solid #BDBDBD;
     border-radius:5px;
     font-family: Noto Sans KR;
@@ -312,7 +312,7 @@ body {
     margin-left: 10px;
 }
 
-.cont-get .list-select .txt-number {
+.cont-get .list-select .txt-number-one,.txt-number-two,.txt-number-three,.txt-numberfour,.txt-number-five,.txt-number-six {
     border: 1px solid #BDBDBD;
     border-radius:5px;
     font-family: Noto Sans KR;
