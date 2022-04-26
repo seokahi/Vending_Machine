@@ -1,5 +1,6 @@
 # Vending_Machine 구현
 
-![image](https://user-images.githubusercontent.com/73926393/164068026-ae20cc9d-5a94-485d-b590-1db5a9fb0b5e.png)
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/73926393/165361608-fdb87515-0bb8-4f4d-8e99-0a9d0e7dfcb4.gif)
 
-추후 클린코드로 수정할 것!!
+Javascript 구현
+- list-item 선택 후 box에 담기
